@@ -82,12 +82,11 @@ $$
 
 Responda:
 
-1. Quantos símbolos existem no alfabeto?
-2. Quais são os símbolos?
-3. O símbolo `a` pertence ao alfabeto?
-4. O símbolo `d` pertence ao alfabeto?
-5. Escreva uma palavra formada por símbolos desse alfabeto.
-
+1. Quantos símbolos existem no alfabeto? Existem 3 símbolos.
+2. Quais são os símbolos? Os símbolos são a, b e c.
+3. O símbolo a pertence ao alfabeto? Sim, o símbolo a pertence ao alfabeto.
+O símbolo d pertence ao alfabeto? Não, o símbolo d não pertence ao alfabeto.
+Escreva uma palavra formada por símbolos desse alfabeto. Uma palavra possível é abc.
 ---
 
 # 2. Palavras sobre um alfabeto
@@ -195,26 +194,18 @@ $$
 
 ---
 
-## Exercício para o estudante
-
 Considere:
 
-$$
-\Sigma = {0,1}
-$$
+$$ \Sigma = {0,1} $$
 
-Classifique cada sequência como **palavra válida** ou **não válida**:
+Classifique cada sequência como palavra válida ou não válida:
 
-| Sequência | Válida? | Justificativa |
-| --------- | ------- | ------------- |
-| `0101`    |         |               |
-| `00110`   |         |               |
-| `012`     |         |               |
-| `111`     |         |               |
-| `10a`     |         |               |
-
----
-
+Sequência	Válida?	Justificativa
+0101	Sim	É válida porque contém apenas os símbolos 0 e 1, que pertencem ao alfabeto.
+00110	Sim	É válida porque contém apenas os símbolos 0 e 1, que pertencem ao alfabeto.
+012	Não	Não é válida porque o símbolo 2 não pertence ao alfabeto {0,1}.
+111	Sim	É válida porque contém apenas o símbolo 1, que pertence ao alfabeto.
+10a	Não	Não é válida porque o símbolo a não pertence ao alfabeto {0,1}.
 # 3. Pertinência de símbolos e palavras
 
 ## Exercício comentado
@@ -331,14 +322,12 @@ $$
 
 Determine se as afirmações são **verdadeiras ou falsas**:
 
-1. $0 \in \Sigma$
-2. $1 \in \Sigma$
-3. $01 \in \Sigma$
-4. $01 \in \Sigma^*$
-5. $2 \in \Sigma$
-6. $101 \in \Sigma^*$
-
-Justifique cada resposta.
+1. $0 \in \Sigma$ **→ Verdadeira. Justificativa: o símbolo `0` pertence ao alfabeto `Σ = {0,1}`.**
+2. $1 \in \Sigma$ **→ Verdadeira. Justificativa: o símbolo `1` pertence ao alfabeto `Σ = {0,1}`.**
+3. $01 \in \Sigma$ **→ Falsa. Justificativa: `01` é uma cadeia formada por dois símbolos, enquanto `Σ` contém apenas os símbolos individuais `0` e `1`.**
+4. $01 \in \Sigma^*$ **→ Verdadeira. Justificativa: `01` é uma cadeia formada somente por símbolos pertencentes a `Σ`, portanto pertence a `Σ*`.**
+5. $2 \in \Sigma$ **→ Falsa. Justificativa: o símbolo `2` não pertence ao alfabeto `Σ = {0,1}`.**
+6. $101 \in \Sigma^*$ **→ Verdadeira. Justificativa: `101` é uma cadeia formada apenas pelos símbolos `0` e `1`, portanto pertence a `Σ*`.**
 
 ---
 
@@ -442,12 +431,12 @@ $$
 
 Determine se cada palavra pertence à linguagem:
 
-1. $0 \in L$
-2. $01 \in L$
-3. $0111 \in L$
-4. $10 \in L$
-5. $111 \in L$
-6. $011 \in L$
+1. $0 \in L$ **→ Verdadeira. `0` pertence à linguagem `L`.**
+2. $01 \in L$ **→ Verdadeira. `01` pertence à linguagem `L`.**
+3. $0111 \in L$ **→ Verdadeira. `0111` pertence à linguagem `L`.**
+4. $10 \in L$ **→ Falsa. `10` não pertence à linguagem `L`.**
+5. $111 \in L$ **→ Falsa. `111` não pertence à linguagem `L`.**
+6. $011 \in L$ **→ Verdadeira. `011` pertence à linguagem `L`.**
 
 ---
 
@@ -542,7 +531,7 @@ pode ser lido:
 
 ---
 
-## Exercício para o estudante
+#### Exercício para o estudante
 
 Considere:
 
@@ -550,10 +539,10 @@ $$
 L = {b^n \mid n \geq 1}
 $$
 
-1. Escreva as cinco primeiras palavras.
-2. Explique o significado de $b^n$.
-3. A palavra `bbbbbb` pertence à linguagem?
-4. A palavra vazia ($\varepsilon$) pertence à linguagem?
+1. Escreva as cinco primeiras palavras. **→ `b`, `bb`, `bbb`, `bbbb`, `bbbbb`.**
+2. Explique o significado de $b^n$. **→ `b^n` significa a repetição do símbolo `b` exatamente `n` vezes.**
+3. A palavra `bbbbbb` pertence à linguagem? **→ Sim. `bbbbbb = b^6` e, como `6 ≥ 1`, ela pertence à linguagem `L`.**
+4. A palavra vazia ($\varepsilon$) pertence à linguagem? **→ Não. A palavra vazia corresponde a `b^0`, mas a linguagem exige `n ≥ 1`.**
 
 ---
 
@@ -638,7 +627,6 @@ Lemos:
 > **"Épsilon"** ou **"palavra vazia"**.
 
 ---
-
 ## Exercício para o estudante
 
 Explique, com suas próprias palavras, a diferença entre:
@@ -649,17 +637,21 @@ $$
 L=\emptyset
 $$
 
+**→ Significa que a linguagem `L` é vazia, ou seja, não possui nenhuma palavra.**
+
 ### B
 
 $$
 L={\varepsilon}
 $$
 
+**→ Significa que a linguagem `L` possui uma única palavra: a palavra vazia `ε`.**
+
 Depois responda:
 
-1. Qual delas possui uma palavra?
-2. Qual delas não possui nenhuma palavra?
-3. Qual é o comprimento da palavra $\varepsilon$?
+1. Qual delas possui uma palavra? **→ A linguagem `L = {ε}` possui uma palavra, que é `ε`.**
+2. Qual delas não possui nenhuma palavra? **→ A linguagem `L = ∅` não possui nenhuma palavra.**
+3. Qual é o comprimento da palavra `ε`? **→ O comprimento de `ε` é `0`, ou seja, `|ε| = 0`.**
 
 ---
 
@@ -765,11 +757,11 @@ $$
 
 Identifique:
 
-1. O conjunto de variáveis.
-2. O conjunto de terminais.
-3. O conjunto de produções.
-4. O símbolo inicial.
-5. Qual palavra pode ser gerada por essa gramática?
+1. O conjunto de variáveis. **→ `{S, A}`.**
+2. O conjunto de terminais. **→ `{0, 1}`.**
+3. O conjunto de produções. **→ `{S → 0A, A → 1}`.**
+4. O símbolo inicial. **→ `S`.**
+5. Qual palavra pode ser gerada por essa gramática? **→ A palavra `01`, pois `S → 0A → 01`.**
 
 ---
 
@@ -865,10 +857,10 @@ $$
 
 Começando com $S$:
 
-1. Aplique a regra uma vez.
-2. Aplique a regra duas vezes.
-3. Aplique a regra três vezes.
-4. Escreva a sequência completa de derivação.
+1. Aplique a regra uma vez. **→ `S → 0S`**
+2. Aplique a regra duas vezes. **→ `S → 0S → 00S`**
+3. Aplique a regra três vezes. **→ `S → 0S → 00S → 000S`**
+4. Escreva a sequência completa de derivação. **→ `S → 0S → 00S → 000S`**
 
 ---
 
@@ -999,7 +991,7 @@ Utilizando:
 $$
 G:
 \begin{cases}
-S\rightarrow aS\
+S\rightarrow aS\\
 S\rightarrow b
 \end{cases}
 $$
@@ -1010,7 +1002,7 @@ $$
 aaab
 $$
 
-**Escreva todos os passos da derivação.**
+**Escreva todos os passos da derivação.** **→ `S → aS → aaS → aaaS → aaab`**
 
 ---
 
@@ -1147,7 +1139,6 @@ $$
 $$
 
 ---
-
 ## Exercício para o estudante
 
 Considere novamente:
@@ -1155,21 +1146,21 @@ Considere novamente:
 $$
 G:
 \begin{cases}
-S\rightarrow0S\
+S\rightarrow0S\\
 S\rightarrow1
 \end{cases}
 $$
 
 Determine se cada palavra pode ser gerada:
 
-1. `1`
-2. `01`
-3. `001`
-4. `0001`
-5. `101`
-6. `1001`
+1. `1` **→ Sim. Derivação: `S → 1`.**
+2. `01` **→ Sim. Derivação: `S → 0S → 01`.**
+3. `001` **→ Sim. Derivação: `S → 0S → 00S → 001`.**
+4. `0001` **→ Sim. Derivação: `S → 0S → 00S → 000S → 0001`.**
+5. `101` **→ Não. A gramática sempre começa gerando zero ou mais `0` e termina com `1`, portanto não pode gerar uma palavra que comece com `1` e depois tenha outro símbolo.**
+6. `1001` **→ Não. A palavra começa com `1`, mas a regra `S → 1` encerra a derivação, não permitindo adicionar outros símbolos depois do `1`.**
 
-Para as palavras que podem ser geradas, apresente a derivação completa.
+Para as palavras que podem ser geradas, apresente a derivação completa. **→ `1`: S → 1; `01`: S → 0S → 01; `001`: S → 0S → 00S → 001; `0001`: S → 0S → 00S → 000S → 0001.**
 
 ---
 
@@ -1679,26 +1670,26 @@ A palavra `1001` começa com `1` e depois possui outros símbolos, o que não é
 | $\Rightarrow$      | Derivação                                                             |
 
 ---
-
 # Checklist de estudo
 
 Antes de avançar para os próximos conteúdos, verifique se você consegue:
 
-* [ ] Explicar o que é um alfabeto.
-* [ ] Identificar os símbolos de um alfabeto.
-* [ ] Diferenciar símbolo de palavra.
-* [ ] Explicar o que é uma linguagem.
-* [ ] Verificar se uma palavra pertence a uma linguagem.
-* [ ] Interpretar $\Sigma^*$.
-* [ ] Diferenciar $\emptyset$ de $\varepsilon$.
-* [ ] Interpretar $w\in L$.
-* [ ] Identificar os componentes de uma gramática.
-* [ ] Ler uma regra como $S\rightarrow aS$.
-* [ ] Realizar uma derivação passo a passo.
-* [ ] Identificar quando uma derivação termina.
-* [ ] Determinar se uma palavra pode ser gerada por uma gramática.
+* [x] Explicar o que é um alfabeto. **→ É um conjunto finito de símbolos que podem ser utilizados para formar palavras ou cadeias.**
+* [x] Identificar os símbolos de um alfabeto. **→ Basta observar quais símbolos estão dentro do conjunto. Por exemplo, em $\Sigma = {0,1}$, os símbolos são `0` e `1`.**
+* [x] Diferenciar símbolo de palavra. **→ Um símbolo é um único elemento do alfabeto, como `a`. Uma palavra é uma sequência de símbolos, como `aba`.**
+* [x] Explicar o que é uma linguagem. **→ É um conjunto de palavras ou cadeias formadas a partir de um determinado alfabeto.**
+* [x] Verificar se uma palavra pertence a uma linguagem. **→ Basta verificar se a palavra está entre as palavras que fazem parte da linguagem.**
+* [x] Interpretar $\Sigma^*$. **→ Representa o conjunto de todas as cadeias de tamanho finito que podem ser formadas usando os símbolos de $\Sigma$, incluindo a cadeia vazia $\varepsilon$.**
+* [x] Diferenciar $\emptyset$ de $\varepsilon$. **→ $\emptyset$ representa uma linguagem ou conjunto sem nenhuma palavra, enquanto $\varepsilon$ representa uma palavra vazia, cujo comprimento é `0`.**
+* [x] Interpretar $w\in L$. **→ Significa que a palavra `w` pertence à linguagem `L`.**
+* [x] Identificar os componentes de uma gramática. **→ Uma gramática possui variáveis (não terminais), terminais, regras de produção e um símbolo inicial.**
+* [x] Ler uma regra como $S\rightarrow aS$. **→ Lê-se: "`S` produz `aS`" ou "`S` pode ser substituído por `aS`".**
+* [x] Realizar uma derivação passo a passo. **→ Começamos pelo símbolo inicial e aplicamos as regras de produção uma de cada vez até obter a palavra desejada.**
+* [x] Identificar quando uma derivação termina. **→ A derivação termina quando não existem mais símbolos não terminais para serem substituídos.**
+* [x] Determinar se uma palavra pode ser gerada por uma gramática. **→ Verificamos se é possível começar pelo símbolo inicial e aplicar as regras de produção até obter exatamente a palavra desejada.**
 
 ---
+
 
 # Desafio final
 
