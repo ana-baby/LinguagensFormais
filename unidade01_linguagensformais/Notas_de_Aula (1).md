@@ -941,21 +941,22 @@ Significa:
 
 Antes de avançar para a próxima aula, verifique se você consegue explicar:
 
-* [ ] O que é um **alfabeto `Σ`**;
-* [ ] O que é uma **cadeia**;
-* [ ] O que significa **`ε`**;
-* [ ] Por que **`|ε| = 0`**;
-* [ ] O que é um **prefixo**;
-* [ ] O que é um **sufixo**;
-* [ ] O que significa **`Σ*`**;
-* [ ] Se `Σ*` possui limite de tamanho;
-* [ ] O que é uma **linguagem formal `L`**;
-* [ ] O que significa **`L ⊆ Σ*`**;
-* [ ] O que é uma **gramática formal**;
-* [ ] O que são **terminais e não terminais**;
-* [ ] O que é uma **regra de produção**;
-* [ ] Como ler **`S → aS | ε`**;
-* [ ] Como gerar palavras usando uma gramática.
+* [x] O que é um **alfabeto `Σ`**: É um conjunto finito de símbolos que podem ser utilizados para formar cadeias. Exemplo: `Σ = {a, b}`.
+* [x] O que é uma **cadeia**: É uma sequência finita de símbolos pertencentes a um alfabeto. Exemplo: `abba`.
+* [x] O que significa **`ε`**: Representa a **cadeia vazia**, ou seja, uma cadeia que não possui nenhum símbolo.
+* [x] Por que **`|ε| = 0`**: Porque `ε` não possui nenhum símbolo. Portanto, seu comprimento é igual a `0`.
+* [x] O que é um **prefixo**: É uma parte inicial de uma cadeia. Por exemplo, os prefixos de `abc` são `ε`, `a`, `ab` e `abc`.
+* [x] O que é um **sufixo**: É uma parte final de uma cadeia. Por exemplo, os sufixos de `abc` são `ε`, `c`, `bc` e `abc`.
+* [x] O que significa **`Σ*`**: Representa o conjunto de todas as cadeias de tamanho finito que podem ser formadas usando os símbolos de `Σ`, incluindo `ε`.
+* [x] Se `Σ*` possui limite de tamanho: Não. `Σ*` contém cadeias de qualquer tamanho finito, portanto não existe um tamanho máximo.
+* [x] O que é uma **linguagem formal `L`**: É um conjunto de cadeias formadas a partir de um determinado alfabeto.
+* [x] O que significa **`L ⊆ Σ*`**: Significa que `L` é um subconjunto de `Σ*`, ou seja, todas as cadeias de `L` pertencem a `Σ*`.
+* [x] O que é uma **gramática formal**: É um conjunto de regras utilizado para gerar as cadeias de uma linguagem formal.
+* [x] O que são **terminais e não terminais**: **Terminais** são os símbolos que aparecem na palavra final. **Não terminais** são símbolos auxiliares utilizados durante a geração das palavras.
+* [x] O que é uma **regra de produção**: É uma regra que determina como um símbolo pode ser substituído por outros símbolos durante a geração de uma cadeia. Exemplo: `S → aS`.
+* [x] Como ler **`S → aS | ε`**: Lê-se: **"S pode produzir aS ou ε"**. O símbolo `|` significa **"ou"**.
+* [x] Como gerar palavras usando uma gramática: Começamos pelo símbolo inicial e aplicamos as regras de produção até que não existam mais símbolos não terminais. Por exemplo, com `S → aS | ε`, podemos gerar `aaa` assim: `S → aS → aaS → aaaS → aaaε → aaa`.
+
 
 ---
 
